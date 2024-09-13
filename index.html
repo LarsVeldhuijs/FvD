@@ -1,21 +1,211 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2425</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Kinepolis</title>
 </head>
 
-<body>
-	<h1>Howdy FED2425</h1>
 
-	<script defer src="scripts/script.js"></script>
+<body>
+    <header>
+        <button>MENU</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Filmagenda</a></li>
+                <li><a href="./index.html">Films</a></li>
+                <li><a href="./index.html">Kids</a></li>
+                <li><a href="./index.html">Events</a></li>
+                <li><a href="./index.html">Music & Movies</a></li>
+                <li><a href="./index.html">Cultuur</a></li>
+                <li><a href="./index.html">Technologieën</a></li>
+                <li><a href="./index.html">Acties & Kortingen</a></li>
+                <li><a href="./index.html">My Kinepolis</a></li>
+                <li><a href="./index.html">Movie Club</a></li>
+                <li><a href="./index.html">Geef Film Cadeau</a></li>
+                <li><a href="./index.html">Bioscopen</a></li>
+                <li><a href="./index.html">Kinepolis Business</a></li>
+                <li><a href="./index.html">Partnerbioscopen</a></li>
+                <li><a href="./index.html">Contact & FAQ</a></li>
+            </ul>
+        </nav>
+
+        <h1><a href="./index.html"><img src="./images/logo_kinepolis_text.png" alt=""></a></h1>
+        <button>LOGIN</button>
+    </header>
+
+    <main>
+        <ul>
+            <li><button>FILMS</button></li>
+            <li><button>VANDAAG</button></li>
+            <li><button>VERWACHT</button></li>
+        </ul>
+
+        <section>
+            <label aria-label="false" for="bioscoop">Kies een bioscoop:</label>
+            <select name="Bioscopen" id="bioscoop">
+                <option value="">-Kies Bioscoop-</option>
+                <option value="Kinepolis Almere">Kinepolis Almere</option>
+                <option value="Kinepolis Breda">Kinepolis Breda</option>
+                <option value="Kinepolis Den Bosch">Kinepolis Den Bosch</option>
+                <option value="Kinepolis Den Helder">Kinepolis Den Helder</option>
+                <option value="Kinepolis Dordrecht">Kinepolis Dordrecht</option>
+                <option value="Kinepolis Emmen">Kinepolis Emmen</option>
+                <option value="Kinepolis Enschede">Kinepolis Enschede</option>
+                <option value="Kinepolis Groningen">Kinepolis Groningen</option>
+                <option value="Kinepolis Haarlem">Kinepolis Haarlem</option>
+                <option value="Kinepolis Hoofddorp">Kinepolis Hoofddorp</option>
+                <option value="Kinepolis Jaarbeurs Utrecht">Kinepolis Jaarbeurs Utrecht</option>
+                <option value="Kinepolis Leidschendam">Kinepolis Leidschendam</option>
+                <option value="Kinepolis Oss">Kinepolis Oss</option>
+                <option value="Kinepolis Enschede">Kinepolis Enschede</option>
+                <option value="Kinepolis Schagen">Kinepolis Schagen</option>
+                <option value="Kinepolis Spijkenisse">Kinepolis Spijkenisse</option>
+                <option value="Kinepolis Zoetermeer">Kinepolis Zoetermeer</option>
+                <option value="Cineast (Enschede)">Cineast (Enschede)</option>
+                <option value="Cinerama (Rotterdam)">Cinerama (Rotterdam)</option>
+                <option value="Utrecht City">Utrecht City</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="datum-select">Datum</label>
+            <select name="Datum" id="datum-select">
+                <option value="">-Kies Datum-</option>
+                <option value="14-09-2024">Vandaag</option>
+                <option value="15-09-2024">Morgen</option>
+                <option value="16-09-2024">Maandag, 16 sept</option>
+                <option value="17-09-2024">Dinsdag, 17 sept</option>
+                <option value="18-09-2024">Woensdag, 18 sept</option>
+                <option value="19-09-2024">Donderdag, 19 sept</option>
+                <option value="20-09-2024">Vrijdag, 20 sept</option>
+                <option value="21-09-2024">Zaterdag, 21 sept</option>
+                <option value="22-09-2024">Zondag, 22 sept</option>
+            </select>
+        </section>
+
+        <section>
+            <article>
+                <a href="./detail.html"><img src="./images/TheBatman_movieposter.jpg"
+                        alt="Batman day: the batman(2022) filmposter"></a>
+                <a href="./detail.html">
+                    <h2>Batman Day: The Batman (2022)</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/DeadpoolWolverine_movieposter.jpg"
+                        alt="Deadpool & Wolverine filmposter"></a>
+                <a href="./index.html">
+                    <h2>Deadpool & Wolverine</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Binnenstebuiten2_movieposter.jpg"
+                    alt="Binnenstebuiten 2 filmposter"></a>
+                <a href="./index.html">
+                    <h2>Binnenstebuiten 2</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Beetlejuice_movieposter.jpg" alt="Beetlejuice filmposter"></a>
+                <a href="./index.html">
+                    <h2>Beetlejuice
+                        Beetlejuice
+                    </h2>
+                </a>
+            </article>
+
+            <article>
+                <a href="./index.html"><img src="./images/Minions4_movieposter.jpg"
+                        alt="Verschrikkelijke ikke 4 filmposter"></a>
+                <a href="./index.html">
+                    <h2>Verschrikkelijke ikke 4</h2>
+                </a>
+            </article>
+
+            <article>
+                <a href="./index.html"><img src="./images/Itendswithus_movieposter.jpg"
+                        alt="It ends with us filmposter"></a>
+                <a href="./index.html">
+                    <h2>It ends with us</h2>
+                </a>
+            </article>
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Blinktwice_movieposter.jpg" alt="Blink twice filmposter"></a>
+                <a href="./index.html">
+                    <h2>Blink Twice</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Breakupclub_movieposter.jpg" alt="Breakupclub filmposter"></a>
+                <a href="./index.html">
+                    <h2>De break-up club</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Alien_movieposter.jpg" alt="Alien filmposter"></a>
+                <a href="./index.html">
+                    <h2>Alien: romulus</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Joker_movieposter.jpg" alt="Joker filmposter"></a>
+                <a href="./index.html">
+                    <h2>Joker: folie á deux</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Rokjesnacht_movieposter.jpg" alt="Rokjesnacht filmposter"></a>
+                <a href="./index.html">
+                    <h2>Rokjesnacht</h2>
+                </a>
+            </article>
+
+
+
+            <article>
+                <a href="./index.html"><img src="./images/Transformers_movieposter.jpg"
+                        alt="transformers filmposter"></a>
+                <a href="./index.html">
+                    <h2>Transformers one</h2>
+                </a>
+            </article>
+
+
+
+
+        </section>
+    </main>
+    <script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>

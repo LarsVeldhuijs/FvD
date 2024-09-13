@@ -1,22 +1,32 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+button,
+summary {
+    cursor: pointer;
+}
 
-
-
+:focus-visible {
+    color: rgb(94, 94, 94);
+    border: solid;
+}
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    /* startje */
+    --color-text: #111;
+    --color-background: #F1F5F6;
+    --color-oranje: #ff4f2e;
+    --color-blauw: #064460;
 }
 
 
@@ -27,5 +37,241 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
+/* Header hoofdpagina */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+header nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translatex(-110%);
+    transition: transform .3s;
+    background-color: var(--color-blauw);
+    height: 100vh;
+    padding-top: 4.25em;
+    list-style: none;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0.75em;
+}
+
+nav.toonMenu {
+    transform: translatex(0);
+}
+
+nav ul li a {
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--color-oranje);
+    cursor: pointer
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F5F6;
+    font-size: 87.5%;
+}
+
+header {
+    background-color: #4A81A0;
+    color: white;
+    padding: 0.75em;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0em;
+}
+
+header button:first-of-type {
+    background-color: var(--color-blauw);
+    border: 0.2em solid var(--color-blauw);
+}
+
+header button {
+    background-color: var(--color-oranje);
+    font-weight: bold;
+    color: white;
+    border: 0.2em solid var(--color-oranje);
+    padding: 0.2em;
+    z-index: 10;
+}
+
+
+
+/* Buttons hoofdpagina */
+main ul li {
+    list-style: none;
+    margin: 0.75em;
+}
+
+main ul li button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 7.5em;
+    padding-right: 7.5em;
+    background-color: white;
+    font-weight: bold;
+    color: var(--color-oranje);
+    border: 0.2em solid var(--color-oranje);
+    width: 100%;
+}
+
+main ul li button:hover {
+    background-color: var(--color-oranje);
+    color: white;
+    transition: ease-in 0.3s;
+}
+
+
+
+/* Keuzemenu hoofdpagina */
+section:nth-of-type(1) {
+    margin-top: 2em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(2) {
+    margin: 0.75em;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: .2em;
+    background-color: white;
+    font-weight: bold;
+    color: #4A81A0;
+    border: 0.12em solid rgb(181, 181, 181);
+}
+
+label {
+    color: rgb(103, 103, 103);
+    font-weight: bold;
+}
+
+
+/* Articles films */
+
+section:nth-of-type(3) article a img {
+    width: 16em;
+    height: 24em;
+}
+
+section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+
+section:nth-of-type(3) article {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+section:nth-of-type(3) article:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+
+section:nth-of-type(3) article:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 4;
+}
+
+section:nth-of-type(3) article:nth-of-type(4) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 4;
+}
+
+section:nth-of-type(3) article:nth-of-type(5) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 5;
+}
+
+section:nth-of-type(3) article:nth-of-type(6) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 5;
+}
+
+section:nth-of-type(3) article:nth-of-type(7) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 6;
+}
+
+section:nth-of-type(3) article:nth-of-type(8) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 6;
+}
+
+section:nth-of-type(3) article:nth-of-type(9) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 7;
+}
+
+section:nth-of-type(3) article:nth-of-type(10) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 7;
+}
+
+section:nth-of-type(3) article:nth-of-type(11) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 8;
+}
+
+section:nth-of-type(3) article:nth-of-type(12) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 8;
+}
+
+article {
+    background-color: white;
+    padding-bottom: 1em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section article h2 {
+    padding: 0px 5px;
+    color: #000;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1em;
+    word-break: break-word;
+}
