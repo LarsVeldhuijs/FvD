@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Kinepolis</title>
+</head>
+
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href="./index.html"><img src="./images/logo_kinepolis_text.png" alt="kinepolis logo"></a></li>
+                <li><a href="./index.html"><img src="./images/header_movieclub.avif" alt="movieclub info"></a></li>
+                <li><a href="./index.html"><img src="./images/search_icon.png" alt="zoek icoontje, vergrootglas"></a>
+                </li>
+            </ul>
+        </section>
+
+
+        <button>menu</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Filmagenda</a></li>
+                <li><a href="./index.html">Films</a></li>
+                <li><a href="./index.html">Kids</a></li>
+                <li><a href="./index.html">Events</a></li>
+                <li><a href="./index.html">Music & Movies</a></li>
+                <li><a href="./index.html">Cultuur</a></li>
+                <li><a href="./index.html">Technologieën</a></li>
+                <li><a href="./index.html">Acties & Kortingen</a></li>
+                <li><a href="./index.html">My Kinepolis</a></li>
+                <li><a href="./index.html">Movie Club</a></li>
+                <li><a href="./index.html">Geef Film Cadeau</a></li>
+                <li><a href="./index.html">Bioscopen</a></li>
+                <li><a href="./index.html">Kinepolis Business</a></li>
+                <li><a href="./index.html">Partnerbioscopen</a></li>
+                <li><a href="./index.html">Contact & FAQ</a></li>
+            </ul>
+        </nav>
+
+
+        <button>login</button>
+    </header>
+
+    <main>
+        <ul>
+            <li><button>FILMS</button></li>
+            <li><button>VANDAAG</button></li>
+            <li><button>VERWACHT</button></li>
+        </ul>
+
+        <section>
+            <label aria-label="false" for="bioscoop">Kies een bioscoop:</label>
+            <select name="Bioscopen" id="bioscoop">
+                <option value="">-Kies Bioscoop-</option>
+                <option value="Kinepolis Almere">Kinepolis Almere</option>
+                <option value="Kinepolis Breda">Kinepolis Breda</option>
+                <option value="Kinepolis Den Bosch">Kinepolis Den Bosch</option>
+                <option value="Kinepolis Den Helder">Kinepolis Den Helder</option>
+                <option value="Kinepolis Dordrecht">Kinepolis Dordrecht</option>
+                <option value="Kinepolis Emmen">Kinepolis Emmen</option>
+                <option value="Kinepolis Enschede">Kinepolis Enschede</option>
+                <option value="Kinepolis Groningen">Kinepolis Groningen</option>
+                <option value="Kinepolis Haarlem">Kinepolis Haarlem</option>
+                <option value="Kinepolis Hoofddorp">Kinepolis Hoofddorp</option>
+                <option value="Kinepolis Jaarbeurs Utrecht">Kinepolis Jaarbeurs Utrecht</option>
+                <option value="Kinepolis Leidschendam">Kinepolis Leidschendam</option>
+                <option value="Kinepolis Oss">Kinepolis Oss</option>
+                <option value="Kinepolis Enschede">Kinepolis Enschede</option>
+                <option value="Kinepolis Schagen">Kinepolis Schagen</option>
+                <option value="Kinepolis Spijkenisse">Kinepolis Spijkenisse</option>
+                <option value="Kinepolis Zoetermeer">Kinepolis Zoetermeer</option>
+                <option value="Cineast (Enschede)">Cineast (Enschede)</option>
+                <option value="Cinerama (Rotterdam)">Cinerama (Rotterdam)</option>
+                <option value="Utrecht City">Utrecht City</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="datum-select">Datum</label>
+            <select name="Datum" id="datum-select">
+                <option value="">-Kies Datum-</option>
+                <option value="14-09-2024">Vandaag</option>
+                <option value="15-09-2024">Morgen</option>
+                <option value="16-09-2024">Maandag, 16 sept</option>
+                <option value="17-09-2024">Dinsdag, 17 sept</option>
+                <option value="18-09-2024">Woensdag, 18 sept</option>
+                <option value="19-09-2024">Donderdag, 19 sept</option>
+                <option value="20-09-2024">Vrijdag, 20 sept</option>
+                <option value="21-09-2024">Zaterdag, 21 sept</option>
+                <option value="22-09-2024">Zondag, 22 sept</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="taal-select">Taal</label>
+            <select name="Taal" id="taal-select">
+                <option value="">-Kies Taalversie-</option>
+                <option value="EVNO">Engelse versie (Nederlandse Ondertiteling</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="versie-select">Versie</label>
+            <select name="Versie" id="versie-select">
+                <option value="">-Kies Versie-</option>
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
+                <option value="ScreenX 2D">ScreenX 2D</option>
+                <option value="MX4D 3D">MX4D 3D</option>
+                <option value="Laser Ultra 3D">Laser Ultra 3D</option>
+                <option value="Laser Ultra 2D">Laser Ultra 2D</option>
+            </select>
+        </section>
+
+        <article>
+            <figure>
+                <img src=".//images/TheBatman_movieposter.jpg" alt="Batman movieposter">
+                <img src="./images/12+.png" alt="12 jaar en ouder">
+                <img src="./images/angst.png" alt=" Enge film">
+                <img src="./images/geweld.png" alt="film bevat geweld">
+                <figcaption>
+                    <ul>
+                        <li>Genre</li>
+                        <li>Filmlengte</li>
+                        <li>Land</li>
+                        <li>Release Datum</li>
+                        <li>IMDB Score</li>
+                        <li>Bezoekerscore</li>
+                    </ul>
+
+                    <ul>
+                        <li>Avontuur Actie</li>
+                        <li>161</li>
+                        <li>USA</li>
+                        <li>09/11/2022</li>
+                        <li>7.3</li>
+                        <li>7.5</li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="./images/twitterlogo.jpeg" alt="Twitter"></li>
+                        <li><img src="./images/instgramlogo.jpeg" alt="Instagram"></li>
+                        <li><img src="./images/facebooklogo.jpeg" alt="Facebook"></li>
+                    </ul>
+
+                </figcaption>
+            </figure>
+        </article>
+
+        <article>
+            <h3>Synopsis</h3>
+            <p>﻿Het is meer dan een oproep… Het is een waarschuwing. Warner Bros. Pictures presenteert The Batman van
+                regisseur Matt Reeves, met in de hoofdrol Robert Pattinson als Gotham City’s bekende misdaadbestrijder
+                en zijn alter ego, de teruggetrokken miljardair Bruce Wayne. Twee jaar lang heeft Bruce Wayne (Robert
+                Pattinson) de straten van Gotham City bewaakt als de Batman. Hij is een schrikbeeld voor criminelen
+                geworden en heeft zo de duistere kant van de stad leren kennen. Met slechts een paar trouwe bondgenoten
+                – Alfred Pennyworth (Andy Serkis) en inspecteur James Gordon (Jeffrey Wright) – in een stad waar
+                corruptie hoogtij viert, staat de eenzame held voor de gewone burgers symbool voor wraak. Als een
+                moordenaar het op sadistische wijze gemunt heeft op de elite van Gotham, leidt een spoor van cryptische
+                aanwijzingen ‘World’s Greatest Detective’ naar de onderwereld, waar hij in contact komt met Selina
+                Kyle/Catwoman (Zoë Kravitz), Oswald Cobblepot/de Penguin (Colin Farrell), Carmine Falcone (John
+                Turturro) en Edward Nashton/de Riddler (Paul Dano). Als het bewijs duidelijkere vormen begint aan te
+                nemen, komen de grootse plannen van zijn tegenstander aan het licht. Batman moet nieuwe samenwerkingen
+                aangaan, de dader ontmaskeren en afrekenen met het machtsmisbruik en de corruptie waar Gotham City al zo
+                lang onder lijdt.</p>
+        </article>
+
+        <article>
+            <h3>Acteurs</h3>
+            <p>Danai Gurira, Lupita Nyong'o, Martin Freeman, Letitia Wright, Angela Bassett, Richard Schiff, Florence
+                Kasumba</p>
+        </article>
+
+        <article>
+            <h3>Regisseur</h3>
+            <p>Ryan Googler</p>
+        </article>
+
+        <article>
+            <h3>Te zien in:</h3>
+            <p>2D :
+                Kinepolis Zoetermeer
+                Kinepolis Leidschendam
+                Kinepolis Haarlem
+                Kinepolis Groningen
+                Kinepolis Enschede
+                Kinepolis Dordrecht
+                Kinepolis Den Bosch
+                Kinepolis Breda
+                3D :
+                Kinepolis Jaarbeurs Utrecht
+            </p>
+        </article>
+
+    </main>
+    <footer>
+        <nav>
+            <h6>Movies</h6>
+            <ul>
+                <li><a href="./index.html">Alle films</a></li>
+                <li><a href="./index.html">Familie</a></li>
+                <li><a href="./index.html">Turkse film</a></li>
+                <li><a href="./index.html">Bollywood</a></li>
+            </ul>
+
+            <h6>Events</h6>
+            <ul>
+                <li><a href="./index.html">Beer & Blockbusters</a></li>
+                <li><a href="./index.html">CinePlus</a></li>
+                <li><a href="./index.html">Horror Night</a></li>
+                <li><a href="./index.html">Ladies Night</a></li>
+                <li><a href="./index.html">MEIDEN Avond</a></li>
+                <li><a href="./index.html">High Tea</a></li>
+                <li><a href="./index.html">Date Night</a></li>
+                <li><a href="./index.html">Filmhuis</a></li>
+                <li><a href="./index.html">eSports</a></li>
+            </ul>
+
+            <h6>Kinepolis Group</h6>
+            <ul>
+                <li><a href="./index.html">Investor relations</a></li>
+                <li><a href="./index.html">Kinepolis Business</a></li>
+                <li><a href="./index.html">Over Kinepolis</a></li>
+                <li><a href="./index.html">Persberichten</a></li>
+                <li><a href="./index.html">Werken bij Kinepolis</a></li>
+            </ul>
+
+            <h6>Theaters</h6>
+            <ul>
+                <li><a href="./index.html">Kinepolis Almere</a></li>
+                <li><a href="./index.html">Kinepolis Breda</a></li>
+                <li><a href="./index.html">Kinepolis Den Bosch</a></li>
+                <li><a href="./index.html">Kinepolis Den Helder</a></li>
+                <li><a href="./index.html">Kinepolis Dordrecht</a></li>
+                <li><a href="./index.html">Kinepolis Emmen</a></li>
+                <li><a href="./index.html">Kinepolis Enschede</a></li>
+                <li><a href="./index.html">Kinepolis Groningen</a></li>
+                <li><a href="./index.html">Kinepolis Haarlem</a></li>
+                <li><a href="./index.html">Kinepolis Hoofddorp</a></li>
+                <li><a href="./index.html">Kinepolis Jaarbeurs Utrecht</a></li>
+                <li><a href="./index.html">Kinepolis Leidschendam</a></li>
+                <li><a href="./index.html">Kinepolis Oss</a></li>
+                <li><a href="./index.html">Kinepolis Enschede</a></li>
+                <li><a href="./index.html">Kinepolis Schagen</a></li>
+                <li><a href="./index.html">Kinepolis Spijkenisse</a></li>
+                <li><a href="./index.html">Kinepolis Zoetermeer</a></li>
+                <li><a href="./index.html">Cineast (Enschede)</a></li>
+                <li><a href="./index.html">Cinerama (Rotterdam)</a></li>
+                <li><a href="./index.html">Utrecht City</a></li>
+            </ul>
+
+            <h6>Technologies</h6>
+            <ul>
+                <li><a href="./index.html">Dolby Atmos</a></li>
+                <li><a href="./index.html">Laser ULTRA</a></li>
+                <li><a href="./index.html">3D</a></li>
+                <li><a href="./index.html">MX4D</a></li>
+                <li><a href="./index.html">ScreenX</a></li>
+            </ul>
+
+            <h6>Volg Ons</h6>
+            <ul>
+                <li><a href="./index.html"><img src="./images/instgramfooter.png" alt="Instagram"></a></li>
+                <li><a href="./index.html"><img src="./images/twitterfooter.png" alt="Twitter"></a></li>
+                <li><a href="./index.html"><img src="./images/youtubefooter.png" alt="Youtube"></a></li>
+                <li><a href="./index.html"><img src="./images/facebokfooter.png" alt="Facebook"></a></li>
+            </ul>
+
+            <h6>Social</h6>
+            <ul>
+                <li><a href="./index.html">Mijn Kinepolis</a></li>
+                <li><a href="./index.html">Mijn Bezoek</a></li>
+                <li><a href="./index.html">Contact & FAQ</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="./index.html"><img src="./images/kinepolisfooterlogo.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
