@@ -29,8 +29,16 @@ summary {
     --color-blauw: #064460;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F5F6;
+    font-size: 87.5%;
+}
 
 
 /****************/
@@ -38,16 +46,14 @@ summary {
 /****************/
 
 
-/* Header hoofdpagina */
-* {
-    margin: 0;
-    padding: 0;
-}
+/* Menu list items */
+
 
 a {
     text-decoration: none;
     color: var(--color-text);
 }
+
 
 header nav {
     position: fixed;
@@ -68,6 +74,10 @@ header nav ul li {
     margin: 0.75em;
 }
 
+header nav ul {
+   margin-top: 5em;
+}
+
 nav.toonMenu {
     transform: translatex(0);
 }
@@ -82,54 +92,122 @@ nav ul li a:hover {
     cursor: pointer
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F1F5F6;
-    font-size: 87.5%;
-}
+
+
+/* Header hoofdpagina */
 
 header {
     background-color: #4A81A0;
     color: white;
-    padding: 0.75em;
-    display: flex;
-    justify-content: space-around;
+    padding: 0em;
     position: sticky;
-    top: 0em;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-header button:first-of-type {
-    background-color: var(--color-blauw);
-    border: 0.2em solid var(--color-blauw);
+header section {
+    flex-grow: 1;
 }
 
-header button {
+header section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+header section a {
+    display: block;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+/* Buttons header */
+header section ul li:first-of-type a img {
+    height: 3em;
+    width: 15em;
+}
+
+header section ul li:nth-of-type(2) a img {
+    height: 2.2em;
+    width: 7em;
+    border-radius: 10%;
+    margin-left: 1em;
+}
+
+header section ul li:last-of-type a img {
+    height: 2em;
+    width: 2em;
+    margin-left: 0.5em;
+}
+
+header section:nth-of-type(2) img {
+    height: 1em;
+    width: 1em;
+    margin: 10px;
+    background-color: #003e58;
+    display: flex;
+    justify-content: center;
+}
+
+header nav img {
+    height: 1em;
+    width: 1em;
+    margin: 10px;
+    background-color: #003e58;
+    display: flex;
+    justify-content: center;
+}
+
+header section:nth-of-type(2) {
+    margin-top: 0em;
+}
+
+header section:first-of-type {
+    margin-top: 1em;
+}
+
+.hamburger {
+    background-color: #003e58;
+    border: 0.2em solid #003e58;
+    padding: 0.1em;
+    position: relative;
+    z-index: 10;
+}
+
+.login {
     background-color: var(--color-oranje);
     font-weight: bold;
     color: white;
     border: 0.2em solid var(--color-oranje);
-    padding: 0.2em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 0.75em;
+    padding-bottom: 0.7em;
     z-index: 10;
 }
-
-
 
 /* Buttons hoofdpagina */
 main ul li {
     list-style: none;
     margin: 0.75em;
+    display: flex;
+    justify-content: center;
 }
 
 main ul li button {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     padding-left: 7.5em;
     padding-right: 7.5em;
     background-color: white;
     font-weight: bold;
     color: var(--color-oranje);
-    border: 0.2em solid var(--color-oranje);
-    width: 100%;
+    border: 0.1em solid var(--color-oranje);
+    width: 90%;
 }
 
 main ul li button:hover {
@@ -176,8 +254,8 @@ label {
 /* Articles films */
 
 section:nth-of-type(3) article a img {
-    width: 16em;
-    height: 24em;
+    width: 11em;
+    height: 16em;
 }
 
 section:nth-of-type(3) {
@@ -268,10 +346,325 @@ article {
 }
 
 section article h2 {
-    padding: 0px 5px;
+    padding: 10px 5px;
     color: #000;
+   text-decoration-style: initial;
     text-align: left;
     font-size: 1em;
     line-height: 1em;
     word-break: break-word;
+}
+
+/* Position relative aan de parrent en dan position absolute aan de p in de section (parrent)
+Header position: fixed bottom: 0em right: 0em */
+
+/* footer */
+footer {
+    background-color: #064460;
+    color: white;
+}
+
+footer nav h3 {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 87.5%;
+}
+
+footer nav ul li {
+    color: white;
+    list-style: none;
+    margin-top: 0em;
+    font-size: small;
+    text-align: center;
+}
+
+footer nav ul li:hover {
+    color: var(--color-oranje);
+    cursor: pointer;
+}
+
+footer nav ul:nth-of-type(6) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+footer nav ul:nth-of-type(8) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+iframe {
+    aspect-ratio: 560/315;
+    width: 100%;
+    border-style: none;
+}
+
+main h2:first-of-type {
+    size: 1em;
+}
+
+
+/* css tweedepagina */
+
+.tweedepagina article:first-of-type img:first-of-type {
+    max-width: 25em;
+}
+
+.tweedepagina section {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweedepagina main section {
+    margin-left: 1.7em;
+    margin-right: 1.7em;
+
+}
+
+.tweedepagina article {
+    background-color: #F1F5F6;
+    color: #6E7474;
+    margin-bottom: 1em;
+    font-size: 87.5%;
+    line-height: 1.71429em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.tweedepagina figure {
+    background-color: #032331;
+    padding-top: 0.75em;
+    padding-left: 0.75em;
+    justify-content: center;
+}
+
+.tweedepagina figcaption {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.tweedepagina figcaption ul:first-of-type {
+    list-style: none;
+    color: #F1F5F6;
+    font-size: 1em;
+}
+
+.tweedepagina figcaption ul:nth-of-type(2) {
+    list-style: none;
+    color: #F1F5F6;
+    font-size: 1em;
+}
+
+.tweedepagina figcaption ul:nth-of-type(3) {
+    margin-top: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tweedepagina section:last-of-type {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.tweedepagina section:last-of-type article {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5em;
+    margin: 0;
+    width: 15em;
+    scroll-snap-align: center;
+}
+
+.tweedepagina section:last-of-type article img {
+    height: 20em;
+    width: 2em;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.tweedepagina h2 {
+    color: white;
+    background-color: var(--color-blauw);
+    line-height: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1rem;
+    font-weight: 600;
+    flex-basis: 70%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-transform:capitalize;
+}
+
+.tweedepagina h3 {
+    color: var(--color-blauw);
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-bottom: 0.25em;
+    line-height: 1.71429em;
+}
+
+.tweedepagina h4 {
+    font-size: 1.3em;
+    color: #064460;
+    padding: 0.75em;
+}
+
+.tweedepagina h5 {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 0px 5px;
+    color: #000;
+}
+
+.tweedepagina footer nav h6 {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.tweedepagina nav ul li a {
+    color: white;
+    cursor: pointer;
+}
+
+.tweedepagina nav ul li a:hover {
+    color: var(--color-oranje);
+    cursor: pointer;
+}
+
+.tweedepagina footer nav ul {
+    list-style: none;
+    margin-top: 0em;
+    font-size: small;
+    text-align: center;
+}
+
+.tweedepagina footer nav ul li:hover {
+    color: var(--color-oranje);
+    cursor: pointer;
+}
+
+.tweedepagina footer nav ul:nth-of-type(6) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.tweedepagina footer nav ul:nth-of-type(8) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+}
+
+
+
+/* Like hartje */
+article.liked button.like {  
+    background-color:rgb(255, 255, 255);
+    color:crimson;
+    font-size: 2em;
+  }
+
+  .like {
+    min-height:2.5rem;
+    
+    appearance:none;
+    background-color:transparent;
+    border:none;
+    border-radius:.5em;
+    
+    cursor:pointer;
+    transition:translate .3s;
+  }
+  
+  .like:active {
+    transition:translate 0s;
+    translate: 0px 1px;
+  }
+
+
+
+
+
+
+/* Animatie loading */
+
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: .25;
+      transform: scale(.75);
+    }
+  }
+
+  .spinner-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  .pulse-container {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pulse-bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ec7723;
+  }
+  
+  .pulse-bubble-1 {
+      animation: pulse .4s ease 0s infinite alternate;
+  }
+  .pulse-bubble-2 {
+      animation: pulse .4s ease .2s infinite alternate;
+  }
+  .pulse-bubble-3 {
+      animation: pulse .4s ease .4s infinite alternate;
+  }
+
+
+/* Filter functie*/
+  article.hidden {
+    display: none !important;
 }
